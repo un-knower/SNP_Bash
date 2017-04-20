@@ -19,7 +19,7 @@ echo "[SNP-SQOOP-INFO]== Sqoop executing, please wait a moment!! ==[SNP-SQOOP-IN
 echo "10" > process.temp
 #===========10%=================#
 
-sqoop import --hive-import --hive-overwrite --connect jdbc:oracle:thin:@10.2.32.1:1521:orcl --username SNP --password SNP --verbose -m 1 --hive-table $TEMP_TABLE --table $TABLE_TO  --map-column-hive RECID=STRING,UNITID=STRING 2>sqoop.tmp
+sqoop import --hive-import --hive-overwrite --connect jdbc:oracle:thin:@==:==:== --username == --password == --verbose -m 1 --hive-table $TEMP_TABLE --table $TABLE_TO  --map-column-hive RECID=STRING,UNITID=STRING 2>sqoop.tmp
 echo "[SNP-SQOOP-INFO]== Sqoop Completed!! ==[SNP-SQOOP-INFO]"
 echo "50" > process.temp
 #===========50%=================#
